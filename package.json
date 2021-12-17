@@ -1,0 +1,27 @@
+{
+  "name": "horse-site",
+  "version": "1.0.0",
+  "description": "horse架构站点 nomama ",
+  "main": "index.js",
+  "author": "985911032@qq.com",
+  "license": "MIT",
+  "devDependencies": {
+    "open": "^8.4.0",
+    "patch-package": "^6.4.7",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "simple-git": "^2.48.0",
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "serve": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "dependencies": {
+    "@docsearch/css": "^3.0.0-alpha.42",
+    "@docsearch/js": "^3.0.0-alpha.42",
+    "algoliasearch": "^4.11.0",
+    "intersection-observer": "^0.12.0",
+    "showdown": "^1.9.1"
+  }
+}
