@@ -15,12 +15,14 @@
   },
   "scripts": {
     "serve": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@docsearch/css": "^3.0.0-alpha.42",
     "@docsearch/js": "^3.0.0-alpha.42",
     "algoliasearch": "^4.11.0",
+    "gh-pages": "^3.2.3",
     "intersection-observer": "^0.12.0",
     "showdown": "^1.9.1"
   }
