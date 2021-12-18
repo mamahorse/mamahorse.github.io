@@ -106,7 +106,7 @@ module.exports = {
                 ]
             },
         ],
-        repo: 'SmileCorporation/horse-docs',
+        repo: 'mamahorse/mamahorse.github.io',
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '最近更新时间',
