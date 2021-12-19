@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /logo.png
 heroText: horse架构
 tagline: 
 actionButtons:

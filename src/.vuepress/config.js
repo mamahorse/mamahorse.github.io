@@ -8,11 +8,22 @@ const sidebar = {
                 '/guide/installation',
             ]
         },
+    ],
+    other: [
+        {
+            title: '关于horse',
+            collapsable: false,
+            children: [
+                '/other/about',
+                '/other/join',
+                '/other/donation',
+            ]
+        }
     ]
 }
 
 module.exports = {
-    title: 'horse 架构',
+    title: '架构',
     description: '',
     head: [
         [
@@ -57,6 +68,7 @@ module.exports = {
         ]
     ],
     themeConfig: {
+        logo: '/logo.png',
         nav: [
             {
                 text: '文档',
@@ -66,7 +78,22 @@ module.exports = {
                         text: '教程',
                         link: '/guide/introduction'
                     },
-                   
+
+                ]
+            },
+            {
+                text: '支持horse',
+                ariaLabel: '支持horse',
+                items: [
+                    {
+                        text: '加入我们',
+                        link: '/other/join'
+                    },
+                    {
+                        text: '捐赠',
+                        link: '/other/donation'
+                    },
+
                 ]
             },
             {
@@ -105,6 +132,7 @@ module.exports = {
                     },
                 ]
             },
+
         ],
         repo: 'mamahorse/mamahorse.github.io',
         editLinks: true,
@@ -115,6 +143,7 @@ module.exports = {
         sidebar: {
             collapsable: false,
             '/guide/': sidebar.guide,
+            '/other/': sidebar.other,
         },
 
         smoothScroll: false,
@@ -126,7 +155,9 @@ module.exports = {
         topBanner: false
     },
     plugins: [
+
         [
+            '@vuepress/back-to-top',
             '@vuepress/last-updated',
             {
                 transformer(timestamp) {
